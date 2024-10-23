@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>JSON programs</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        var data = {
+            Bookname: "MyWorldProgramming",
+            Publisher: "Shivam Prajapati",
+            author: "Shivam",
+            price: 250,
+            ISBN: "1256897912345",
+        };
+        document.writeln(JSON.stringify(data));
+        document.writeln(JSON.stringify(data, ["Bookname", "author", "price"]));
+        document.write(JSON.stringify(data, ["Bname", "author", "price"], 5));
+    </script>
+
+</body>
+</html>

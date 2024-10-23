@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parsing JSON Example</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        // JSON string
+        var jsonString = '{"Bname":"MyWorldProgramming","Publisher":"Shivam","author":"Shivam","price":250,"ISBN":"1256897912345"}';
+
+        // Parsing the JSON string into a JavaScript object
+        var book = JSON.parse(jsonString);
+
+        // Accessing and displaying individual values from the parsed object
+        document.write("<h3>Parsed JSON Object:</h3>");
+        document.write("Book Name: " + book.Bname + "<br>");
+        document.write("Author: " + book.author + "<br>");
+        document.write("Price: $" + book.price + "<br>");
+        document.write("Publisher: " + book.Publisher + "<br>");
+        document.write("ISBN: " + book.ISBN + "<br>");
+    </script>
+
+</body>
+</html>
